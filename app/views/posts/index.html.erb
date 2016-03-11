@@ -11,8 +11,8 @@
     <% @posts.each do |post| %>
       <tr>
         <td><%= link_to post.title, post, class: "specialfont" %></td>
-        <% if false %>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <% if false %>
         <td><%= link_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         <% end %>
       </tr>
